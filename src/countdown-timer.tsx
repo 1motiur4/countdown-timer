@@ -1,3 +1,6 @@
+// This is completed from: 
+// https://reactpractice.dev/exercise/create-a-timer-that-can-be-started-and-stopped/
+
 import { useEffect, useRef, useState } from "react";
 
 const formatDate = (dateObject) => {
@@ -24,7 +27,7 @@ const CountdownTimer = () => {
     if (intervalId.current === null) {
       return;
     }
-    
+
     clearInterval(intervalId.current);
     intervalId.current = null;
   };
